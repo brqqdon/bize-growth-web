@@ -1,0 +1,11 @@
+# Cloudflare Pages / Netlify Routing & Clean URL Redirects for https://bizegrowth.com
+/home          /index.html       301
+/system        /system.html      200
+/verticals     /verticals.html   200
+/industries    /verticals.html   301
+/calculator    /calculator.html  200
+/roi           /calculator.html  301
+/audit         /audit.html       200
+/book          /audit.html       301
+/privacy       /privacy.html     200
+/terms         /terms.html       200

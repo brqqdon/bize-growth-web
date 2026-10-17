@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en-AU" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bize Growth | Autonomous B2B Revenue Engineering & Outbound Systems (NSW, Australia)</title>
+  <meta name="description" content="Done-For-You AI outbound client acquisition and multi-domain appointment-setting systems for Australian Commercial Subcontractors, MSPs, and Boutique Recruitment Firms. A division of Bize Studios (ABN 51 767 627 987)." />
+  <link rel="canonical" href="https://bizegrowth.com/" />
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bizegrowth.com/" />
+  <meta property="og:title" content="Bize Growth | Autonomous B2B Revenue Engineering & Client Acquisition" />
+  <meta property="og:description" content="We engineer air-gapped outbound infrastructure, gemini-4-argon hyper-personalised outreach, and qualified B2B sales pipelines for $15k–$80k+ contract verticals across Australia." />
+  <meta property="og:site_name" content="Bize Growth (Division of Bize Studios)" />
+  <meta property="og:locale" content="en_AU" />
+
+  <!-- Inline SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307090E'/%3E%3Cpath d='M16 44L28 28L36 36L48 20' stroke='%2310B981' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='48' cy='20' r='5' fill='%233B82F6'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#07090E',
+            surface: '#0F141F',
+            surfaceElevated: '#151C2C'
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="bg-obsidian text-slate-100 antialiased selection:bg-emerald-500/30 selection:text-emerald-200 bg-grid-pattern">
+
+  <!-- Top Telemetry Status Bar -->
+  <div class="bg-[#05070B] border-b border-white/10 py-2 px-4 text-xs font-mono-code">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2.5">
+        <span class="pulse-dot"></span>
+        <span class="text-emerald-400 font-semibold">INFRASTRUCTURE LIVE:</span>
+        <span class="text-slate-300">4 Google Workspace OAuth Shield Nodes Active (10/10 Mail-Tester Verified)</span>
+      </div>
+      <div class="hidden md:flex items-center gap-5 text-slate-400">
+        <span>LLM Engine: <strong class="text-cyan-400">gemini-4-argon</strong></span>
+        <span>•</span>
+        <span>Division of <a href="https://bizestudios.com.au" target="_blank" rel="noopener" class="text-slate-200 underline decoration-slate-600 hover:text-emerald-400">Bize Studios</a> (ABN 51 767 627 987)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Unified Navigation Bar -->
+  <header class="site-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600/20 to-emerald-500/20 border border-emerald-500/40 flex items-center justify-center shadow-lg">
+          <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-extrabold text-lg tracking-tight text-white">BIZE</span>
+            <span class="font-mono-code text-xs font-semibold px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">GROWTH</span>
+          </div>
+          <p class="text-[11px] font-mono-code text-slate-400 -mt-0.5">B2B Revenue Engineering • NSW, AU</p>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-1" aria-label="Main Navigation">
+        <a href="index.html" data-page="index.html" class="nav-link active">Overview</a>
+        <a href="system.html" data-page="system.html" class="nav-link">The Acquisition Engine</a>
+        <a href="verticals.html" data-page="verticals.html" class="nav-link">Industries We Scale</a>
+        <a href="calculator.html" data-page="calculator.html" class="nav-link">Pipeline ROI Calculator</a>
+        <a href="audit.html" data-page="audit.html" class="nav-link">Territory Audit</a>
+      </nav>
+
+      <!-- Primary CTA & Mobile Trigger -->
+      <div class="flex items-center gap-3">
+        <a href="audit.html" class="hidden sm:inline-flex btn-primary text-sm py-2.5 px-4">
+          <span>Book 15-Min Pipeline Audit</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </a>
+        <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-label="Toggle Menu" class="lg:hidden p-2.5 rounded-lg bg-white/5 border border-white/10 text-slate-200 hover:bg-white/10">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu-drawer" class="mobile-drawer lg:hidden">
+      <div class="flex flex-col gap-2">
+        <a href="index.html" data-page="index.html" class="nav-link active">Overview</a>
+        <a href="system.html" data-page="system.html" class="nav-link">The Acquisition Engine (How It Works)</a>
+        <a href="verticals.html" data-page="verticals.html" class="nav-link">Industries We Scale + Live Simulator</a>
+        <a href="calculator.html" data-page="calculator.html" class="nav-link">Pipeline ROI & SDR Calculator</a>
+        <a href="audit.html" data-page="audit.html" class="nav-link">Book 15-Min Territory Audit</a>
+        <div class="pt-3 mt-2 border-t border-white/10 flex flex-col gap-2">
+          <a href="audit.html" class="btn-primary w-full justify-center">Book 15-Min Pipeline Audit</a>
+          <a href="https://bizestudios.com.au" target="_blank" rel="noopener" class="btn-secondary w-full justify-center text-xs font-mono-code">Visit Bize Studios Media Division ↗</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative overflow-hidden">
+    <!-- Ambient Background Glows -->
+    <div class="ambient-glow-emerald -top-32 -left-32"></div>
+    <div class="ambient-glow-indigo top-16 -right-32"></div>
+
+    <!-- HERO SECTION + LIVE INFRASTRUCTURE TELEMETRY HUD -->
+    <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Left Executive Copy (7 Columns) -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/30 text-xs font-mono-code text-blue-300">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span>AUTONOMOUS B2B CLIENT ACQUISITION • SYDNEY, CENTRAL COAST & NATIONAL</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-[3.35rem] font-extrabold tracking-tight leading-[1.12] text-white">
+            We Engineer Predictable <span class="text-gradient-emerald">$15k–$80k+ B2B Sales Pipelines</span> Without Risking Your Primary Domain.
+          </h1>
+
+          <p class="text-lg text-slate-300 leading-relaxed max-w-2xl">
+            Stop relying on unpredictable word-of-mouth referrals or burning <strong class="text-white font-semibold">$128,000+/yr AUD</strong> on an in-house SDR. Bize Growth deploys air-gapped multi-domain sending infrastructure, real-time buying trigger scrapers, and <code class="font-mono-code text-cyan-300 bg-cyan-950/50 px-1.5 py-0.5 rounded border border-cyan-500/30">gemini-4-argon</code> peer-to-peer outreach to book qualified commercial appointments directly on your calendar.
+          </p>
+
+          <!-- Key Executive Metrics Strip -->
+          <div class="grid grid-cols-3 gap-4 pt-2">
+            <div class="surface-card p-4 border-l-2 border-l-emerald-500">
+              <div class="font-mono-code text-2xl sm:text-3xl font-bold text-white">10/10</div>
+              <div class="text-xs text-slate-400 mt-1">Mail-Tester SPF, DKIM & DMARC Score</div>
+            </div>
+            <div class="surface-card p-4 border-l-2 border-l-blue-500">
+              <div class="font-mono-code text-2xl sm:text-3xl font-bold text-emerald-400">0%</div>
+              <div class="text-xs text-slate-400 mt-1">Risk to Your Primary Corporate Domain</div>
+            </div>
+            <div class="surface-card p-4 border-l-2 border-l-cyan-500">
+              <div class="font-mono-code text-2xl sm:text-3xl font-bold text-white">$10k+</div>
+              <div class="text-xs text-slate-400 mt-1">Minimum Client LTV Vertical Focus</div>
+            </div>
+          </div>
+
+          <!-- Primary Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+            <a href="audit.html" class="btn-emerald text-base py-3.5 px-7">
+              <span>Book Your 15-Min Pipeline Architecture Audit</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+              </svg>
+            </a>
+            <a href="calculator.html" class="btn-secondary text-base py-3.5 px-6">
+              <span>Model Your ROI ($ AUD)</span>
+            </a>
+          </div>
+
+          <!-- Trust & Compliance Footnote -->
+          <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs font-mono-code text-slate-400 pt-2">
+            <span class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              Australian Spam Act 2003 (Cth) Compliant
+            </span>
+            <span class="flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+              Exclusive Postcode / Vertical Locking
+            </span>
+          </div>
+        </div>
+
+        <!-- Right Interactive Live Infrastructure Telemetry HUD (5 Columns) -->
+        <div class="lg:col-span-5">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <div class="flex items-center gap-2">
+                <span class="w-3 h-3 rounded-full bg-rose-500/80"></span>
+                <span class="w-3 h-3 rounded-full bg-amber-500/80"></span>
+                <span class="w-3 h-3 rounded-full bg-emerald-500/80"></span>
+                <span class="ml-2 font-mono-code text-xs text-slate-300 font-semibold">LIVE OUTBOUND TELEMETRY HUD</span>
+              </div>
+              <span class="font-mono-code text-[11px] px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">SMARTLEAD + OAUTH</span>
+            </div>
+
+            <div class="p-5 space-y-4">
+              <!-- Interactive Node Selector -->
+              <div>
+                <div class="text-[11px] font-mono-code text-slate-400 uppercase tracking-wider mb-2">
+                  Select Active Sending Shield Node to Inspect:
+                </div>
+                <div class="grid grid-cols-2 gap-1.5">
+                  <button type="button" data-node-select="brandon-bizegrowth" class="tab-pill active text-left text-xs font-mono-code py-2 px-2.5 truncate">
+                    ● brandon@bizegrowth.com
+                  </button>
+                  <button type="button" data-node-select="duffy-bizegrowth" class="tab-pill text-left text-xs font-mono-code py-2 px-2.5 truncate">
+                    ● duffy@bizegrowth.com
+                  </button>
+                  <button type="button" data-node-select="brandon-getbizestudios" class="tab-pill text-left text-xs font-mono-code py-2 px-2.5 truncate">
+                    ● brandon@getbizestudios.com
+                  </button>
+                  <button type="button" data-node-select="duffy-getbizestudios" class="tab-pill text-left text-xs font-mono-code py-2 px-2.5 truncate">
+                    ● duffy@getbizestudios.com
+                  </button>
+                </div>
+                <button type="button" data-node-select="primary-vault" class="tab-pill w-full mt-1.5 text-left text-xs font-mono-code py-2 px-2.5 flex items-center justify-between">
+                  <span>🔒 bizestudios.com.au (Primary Brand Vault)</span>
+                  <span class="text-[10px] text-emerald-400">AIR-GAPPED</span>
+                </button>
+              </div>
+
+              <!-- Active Node Telemetry Output -->
+              <div class="bg-[#0B101B] border border-white/10 rounded-lg p-4 space-y-2.5 font-mono-code text-xs">
+                <div class="flex items-center justify-between border-b border-white/10 pb-2">
+                  <span class="text-slate-400">INSPECTED NODE:</span>
+                  <span id="hud-mailbox" class="text-emerald-400 font-bold">brandon@bizegrowth.com</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">Architecture Role:</span>
+                  <span id="hud-role" class="text-slate-200 text-right">Primary Outbound Shield Node #01</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">DNS & OAuth Stack:</span>
+                  <span id="hud-provider" class="text-cyan-300 text-right">Google Workspace OAuth 2.0 + Porkbun DNS</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">Custom Tracking CNAME:</span>
+                  <span id="hud-cname" class="text-slate-200 text-right">emailtracking.bizegrowth.com → open.sleadtrack.com (TTL 600)</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">301 Wildcard Forwarding:</span>
+                  <span id="hud-redirect" class="text-slate-200 text-right">301 Wildcard → https://bizestudios.com.au</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">Mail-Tester Audit:</span>
+                  <span id="hud-mailtester" class="text-emerald-400 font-semibold">10 / 10 Verified</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">SPF / DKIM / DMARC:</span>
+                  <span id="hud-auth" class="text-emerald-400">PASS / PASS / PASS (p=quarantine)</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">Warmup Velocity:</span>
+                  <span id="hud-warmup" class="text-slate-200">30 / day (+3/day ramp)</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">Peer Reply Target:</span>
+                  <span id="hud-reply" class="text-cyan-300">35% Automated Peer Reply Ratio</span>
+                </div>
+                <div class="flex items-center justify-between">
+                  <span class="text-slate-400">Incubation Schedule:</span>
+                  <span id="hud-schedule" class="text-slate-200">7 Days / Week Continuous Incubation</span>
+                </div>
+              </div>
+
+              <!-- Bottom Status Banner -->
+              <div class="flex items-center justify-between px-3.5 py-2.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-xs font-mono-code">
+                <span class="flex items-center gap-2 text-emerald-300 font-semibold">
+                  <span class="pulse-dot"></span>
+                  <span id="hud-status-badge">ACTIVE SHIELD — WARMUP 100% HEALTHY</span>
+                </span>
+                <a href="system.html" class="text-white underline hover:text-emerald-300">Inspect Specs →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3-PILLAR ACQUISITION SYSTEM ARCHITECTURE -->
+    <section class="py-20 border-t border-white/10 bg-[#090D16]/70">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mb-14">
+          <div class="font-mono-code text-xs text-emerald-400 uppercase tracking-widest mb-2">
+            // SYSTEM ARCHITECTURE OVERVIEW
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+            Engineered Like Enterprise Software. Operated Like an Elite Sales Desk.
+          </h2>
+          <p class="text-slate-400 mt-3 text-base">
+            Traditional lead generation agencies blast generic templates from your main company domain until you get blacklisted. We build a permanent, air-gapped outbound asset you control.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
+          <!-- Pillar 1 -->
+          <div class="surface-card surface-card-interactive p-7 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <span class="font-mono-code text-xs font-bold px-2.5 py-1 rounded bg-blue-500/15 text-blue-400 border border-blue-500/30">PILLAR 01 // SHIELD</span>
+                <span class="font-mono-code text-xs text-slate-400">DNS + OAuth</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-3">Multi-Domain Shield Infrastructure</h3>
+              <p class="text-sm text-slate-300 leading-relaxed mb-5">
+                Your primary corporate domain (like <code class="font-mono-code text-xs text-emerald-300">bizestudios.com.au</code>) is never connected to cold outbound tools. We provision secondary Google Workspace shield domains with custom <code class="font-mono-code text-xs text-cyan-300">CNAME</code> tracking and 14-day continuous algorithmic warmup.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono-code">
+              <span class="text-emerald-400">10/10 Mail-Tester Standard</span>
+              <a href="system.html#stage-1" class="text-slate-200 hover:text-emerald-400">Technical Spec →</a>
+            </div>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="surface-card surface-card-interactive p-7 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <span class="font-mono-code text-xs font-bold px-2.5 py-1 rounded bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">PILLAR 02 // INTENT</span>
+                <span class="font-mono-code text-xs text-slate-400">2,000+ Credits/Mo</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-3">Australian Buying Trigger Scraping</h3>
+              <p class="text-sm text-slate-300 leading-relaxed mb-5">
+                We don't buy stale CSV lists. Our enrichment scripts monitor live commercial triggers across NSW and Australia: Planning Portal DA/CDC approvals, aged Seek technical job ads, strata portfolio transfers, and Essential Eight compliance mandates.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono-code">
+              <span class="text-emerald-400">Triple-Verified Direct Inboxes</span>
+              <a href="system.html#stage-2" class="text-slate-200 hover:text-emerald-400">Trigger Matrix →</a>
+            </div>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="surface-card surface-card-interactive p-7 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-5">
+                <span class="font-mono-code text-xs font-bold px-2.5 py-1 rounded bg-cyan-500/15 text-cyan-400 border border-cyan-500/30">PILLAR 03 // SYNTHESIS</span>
+                <span class="font-mono-code text-xs text-slate-400">gemini-4-argon</span>
+              </div>
+              <h3 class="text-xl font-bold text-white mb-3">Plain-Text Peer-to-Peer Outreach</h3>
+              <p class="text-sm text-slate-300 leading-relaxed mb-5">
+                Powered by <code class="font-mono-code text-xs text-cyan-300">gemini-4-argon</code>, every prospect receives a concise, plain-text Australian B2B note referencing their exact project, tender, or operational bottleneck—with zero HTML bloat, zero tracking pixels, and broadcast-grade video conversion assets when they reply.
+              </p>
+            </div>
+            <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs font-mono-code">
+              <span class="text-emerald-400">30%–35% Warmup Reply Benchmark</span>
+              <a href="system.html#stage-3" class="text-slate-200 hover:text-emerald-400">See Before/After →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TARGET VERTICALS PREVIEW -->
+    <section class="py-20 border-t border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-10 gap-6">
+          <div>
+            <div class="font-mono-code text-xs text-cyan-400 uppercase tracking-widest mb-2">
+              // HIGH-TICKET VERTICAL FOCUS ($10,000+ LTV)
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Built Strictly for High-LTV B2B Industries
+            </h2>
+          </div>
+          <!-- Vertical Selector Buttons -->
+          <div class="flex flex-wrap gap-2">
+            <button type="button" data-home-vertical="subcontractors" class="tab-pill active">
+              01. Commercial Subcontractors ($15k–$80k+)
+            </button>
+            <button type="button" data-home-vertical="msp" class="tab-pill">
+              02. Managed IT & Cyber MSPs ($24k–$72k/yr)
+            </button>
+            <button type="button" data-home-vertical="recruitment" class="tab-pill">
+              03. Boutique Executive Search ($8k–$25k+)
+            </button>
+          </div>
+        </div>
+
+        <!-- Interactive Vertical Panel -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 surface-card p-6 sm:p-9">
+          <div class="lg:col-span-6 space-y-5">
+            <div class="inline-flex items-center gap-2 text-xs font-mono-code px-3 py-1 rounded bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
+              <span>TARGET DEAL VALUE:</span>
+              <strong id="hv-deal">$15,000 – $80,000+ AUD</strong>
+            </div>
+            <h3 id="hv-title" class="text-2xl sm:text-3xl font-bold text-white">
+              Commercial Subcontractors & Facility Specialists
+            </h3>
+            <p id="hv-subtitle" class="text-sm text-slate-300">
+              Commercial HVAC, Fire Compliance, Commercial Solar, Strata Maintenance & Office Fit-Outs
+            </p>
+
+            <div class="bg-[#080B12] border border-white/10 rounded-lg p-4">
+              <div class="text-xs font-mono-code text-slate-400 uppercase mb-1">Decision-Makers Targeted:</div>
+              <div id="hv-buyer" class="text-sm font-semibold text-white">
+                Facility Managers, Strata Directors, Tier-2 Builders & Commercial Property Owners
+              </div>
+            </div>
+
+            <div>
+              <div class="text-xs font-mono-code text-cyan-400 uppercase mb-2.5">Live Australian Buying Signals We Scrape:</div>
+              <ul id="hv-triggers" class="space-y-2">
+                <li class="flex items-start gap-2.5 text-sm text-slate-300">
+                  <span class="text-emerald-400 font-mono-code mt-0.5">▸</span>
+                  <span>NSW Planning Portal DA & Complying Development Certificate (CDC) approvals</span>
+                </li>
+                <li class="flex items-start gap-2.5 text-sm text-slate-300">
+                  <span class="text-emerald-400 font-mono-code mt-0.5">▸</span>
+                  <span>Strata plan capital works fund allocations & annual fire safety statement (AFSS) renewals</span>
+                </li>
+                <li class="flex items-start gap-2.5 text-sm text-slate-300">
+                  <span class="text-emerald-400 font-mono-code mt-0.5">▸</span>
+                  <span>Commercial tenancy lease handovers & multi-floor office defit/fit-out tenders</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pt-3 flex flex-wrap gap-3">
+              <button id="hv-audit-cta" type="button" onclick="window.lockInPipelineAndBook({vertical:'subcontractors'})" class="btn-primary text-sm">
+                <span>Check Territory Availability for This Vertical</span>
+              </button>
+              <a href="verticals.html#live-simulator" class="btn-secondary text-sm">
+                <span>Launch Full Sequence Simulator →</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Sample Plain-Text Outreach Preview -->
+          <div class="lg:col-span-6">
+            <div class="terminal-window h-full flex flex-col justify-between">
+              <div class="terminal-header">
+                <span class="font-mono-code text-xs text-slate-300">PLAIN-TEXT OUTREACH SYNTHESIS (gemini-4-argon)</span>
+                <span class="font-mono-code text-[11px] text-emerald-400">0 HTML / 0 PIXELS</span>
+              </div>
+              <div class="p-5 space-y-3 flex-1">
+                <div class="text-xs font-mono-code text-slate-400 border-b border-white/10 pb-2">
+                  <div>FROM: <span class="text-slate-200">brandon@bizegrowth.com</span></div>
+                  <div class="mt-1">SUBJECT: <span id="hv-sample-subject" class="text-emerald-400 font-semibold">Parramatta commercial strata portfolio / AFSS & HVAC tender panel</span></div>
+                </div>
+                <pre id="hv-sample-body" class="font-mono-code text-xs sm:text-[13px] text-slate-200 whitespace-pre-wrap leading-relaxed">G'day Mark,
+
+Saw your strata group just took over management of the 4-tower commercial complex on George St in Parramatta.
+
+When facility managers inherit multi-tenancy buildings mid-quarter, getting reliable mechanical & fire compliance subcontractors onto the panel without blowing out capital works budgets is usually top of mind.
+
+We handle statutory HVAC & fire maintenance for 14 commercial buildings across Greater Western Sydney with guaranteed 4-hour emergency SLA.
+
+Worth a quick 10-minute chat next Tuesday to see if you need a backup contractor on your tender list?
+
+Cheers,
+Brandon</pre>
+              </div>
+              <div class="bg-[#0B0F17] px-5 py-3 border-t border-white/10 flex items-center justify-between text-xs font-mono-code text-slate-400">
+                <span>Australian English Verified</span>
+                <a href="verticals.html" class="text-cyan-400 hover:underline">Customise in Live Simulator →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMBEDDED PIPELINE ROI & SDR REPLACEMENT PREVIEW -->
+    <section class="py-20 border-t border-white/10 bg-[#090D16]/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Sliders Column -->
+          <div class="lg:col-span-6 space-y-6">
+            <div class="font-mono-code text-xs text-emerald-400 uppercase tracking-widest">
+              // INTERACTIVE PIPELINE ROI ESTIMATOR ($ AUD)
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+              Compare Bize Growth Against Hiring a $128k/yr In-House SDR.
+            </h2>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              Adjust the sliders below to model your projected annual B2B pipeline. Click <strong class="text-white">"Lock In This Pipeline"</strong> to carry your custom numbers directly into your 15-minute territory audit.
+            </p>
+
+            <div class="surface-card p-6 space-y-6">
+              <!-- Deal Value Slider -->
+              <div>
+                <div class="flex justify-between text-sm mb-2">
+                  <label for="home-calc-deal" class="font-medium text-slate-300">Average Contract / Deal Value ($ AUD)</label>
+                  <span id="home-calc-deal-val" class="font-mono-code font-bold text-emerald-400">$35,000 AUD</span>
+                </div>
+                <input id="home-calc-deal" type="range" min="10000" max="100000" step="2500" value="35000" class="exec-slider" />
+              </div>
+
+              <!-- Monthly Outbound Volume Slider -->
+              <div>
+                <div class="flex justify-between text-sm mb-2">
+                  <label for="home-calc-volume" class="font-medium text-slate-300">Verified Decision-Makers Contacted / Month</label>
+                  <span id="home-calc-volume-val" class="font-mono-code font-bold text-cyan-400">1,500 prospects/mo</span>
+                </div>
+                <input id="home-calc-volume" type="range" min="600" max="3000" step="100" value="1500" class="exec-slider" />
+              </div>
+
+              <!-- Close Rate Slider -->
+              <div>
+                <div class="flex justify-between text-sm mb-2">
+                  <label for="home-calc-close" class="font-medium text-slate-300">Your Close Rate on Qualified Meetings (%)</label>
+                  <span id="home-calc-close-val" class="font-mono-code font-bold text-blue-400">25%</span>
+                </div>
+                <input id="home-calc-close" type="range" min="10" max="45" step="1" value="25" class="exec-slider" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Output Card Column -->
+          <div class="lg:col-span-6">
+            <div class="surface-card-emerald p-7 sm:p-9 space-y-6">
+              <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                <div>
+                  <div class="text-xs font-mono-code text-emerald-400 uppercase">PROJECTED NEW ANNUAL REVENUE</div>
+                  <div id="home-out-revenue" class="font-mono-code text-4xl sm:text-5xl font-extrabold text-white mt-1">$2,835,000</div>
+                </div>
+                <div class="text-right">
+                  <span id="home-out-roi" class="inline-block font-mono-code text-lg font-bold px-3 py-1 rounded-lg bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                    78.8x ROI
+                  </span>
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="bg-[#080C14] border border-white/10 rounded-lg p-4">
+                  <div class="text-xs font-mono-code text-slate-400">Qualified Sales Meetings</div>
+                  <div id="home-out-meetings" class="font-mono-code text-xl font-bold text-white mt-1">27/mo (324/yr)</div>
+                </div>
+                <div class="bg-[#080C14] border border-white/10 rounded-lg p-4">
+                  <div class="text-xs font-mono-code text-slate-400">Annual Pipeline Value</div>
+                  <div id="home-out-pipeline" class="font-mono-code text-xl font-bold text-cyan-400 mt-1">$11,340,000</div>
+                </div>
+              </div>
+
+              <div class="bg-[#080C14] border border-emerald-500/30 rounded-lg p-4 flex items-center justify-between">
+                <div>
+                  <div class="text-xs font-mono-code text-slate-400">Annual Payroll Overhead Saved vs. In-House SDR:</div>
+                  <div id="home-out-savings" class="font-mono-code text-base font-bold text-emerald-400 mt-0.5">$92,825/yr saved vs In-House SDR</div>
+                </div>
+                <a href="calculator.html" class="text-xs font-mono-code text-slate-300 underline hover:text-white shrink-0">Full Breakdown →</a>
+              </div>
+
+              <div class="flex flex-col sm:flex-row gap-3 pt-2">
+                <button id="home-calc-lock-btn" type="button" class="btn-emerald w-full justify-center py-3.5 text-base">
+                  <span>Lock In This Pipeline — Book Audit</span>
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                </button>
+                <a href="calculator.html" class="btn-secondary justify-center py-3.5 px-5 text-sm shrink-0">
+                  Open Full Calculator
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Unified Executive Footer -->
+  <footer class="bg-[#05070B] border-t border-white/10 pt-16 pb-12 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        
+        <!-- Col 1-2: Brand & Architecture -->
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-emerald-500/15 border border-emerald-500/40 flex items-center justify-center">
+              <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+              </svg>
+            </div>
+            <span class="font-extrabold text-lg text-white tracking-tight">BIZE GROWTH</span>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+            The B2B Revenue Engineering & Autonomous Client Acquisition division of <strong class="text-slate-200">Bize Studios</strong> (ABN 51 767 627 987). Operating across the Central Coast, Parramatta, Greater Sydney, and National Australian B2B corridors.
+          </p>
+          <div class="font-mono-code text-xs text-slate-400 space-y-1">
+            <div>Direct Executive Desk: <a href="mailto:brandon@bizestudios.com.au" class="text-emerald-400 hover:underline">brandon@bizestudios.com.au</a></div>
+            <div>General Enquiries: <a href="mailto:enquiries@bizestudios.com.au" class="text-slate-300 hover:underline">enquiries@bizestudios.com.au</a></div>
+          </div>
+        </div>
+
+        <!-- Col 3: Platform Navigation -->
+        <div class="space-y-2.5">
+          <div class="font-mono-code text-xs uppercase text-slate-400 font-semibold tracking-wider">Acquisition System</div>
+          <ul class="space-y-2 text-slate-300 text-xs">
+            <li><a href="index.html" class="hover:text-emerald-400 transition">Executive Overview</a></li>
+            <li><a href="system.html" class="hover:text-emerald-400 transition">4-Stage Acquisition Engine</a></li>
+            <li><a href="verticals.html" class="hover:text-emerald-400 transition">Target High-Ticket Verticals</a></li>
+            <li><a href="verticals.html#live-simulator" class="hover:text-emerald-400 transition">Live Outreach Simulator</a></li>
+            <li><a href="calculator.html" class="hover:text-emerald-400 transition">Pipeline ROI & SDR Calculator</a></li>
+            <li><a href="audit.html" class="hover:text-emerald-400 transition">15-Min Pipeline Architecture Audit</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Verticals -->
+        <div class="space-y-2.5">
+          <div class="font-mono-code text-xs uppercase text-slate-400 font-semibold tracking-wider">Industries We Scale</div>
+          <ul class="space-y-2 text-slate-300 text-xs">
+            <li><a href="verticals.html#vertical-subcontractors" class="hover:text-emerald-400 transition">Commercial HVAC & Fire Compliance</a></li>
+            <li><a href="verticals.html#vertical-subcontractors" class="hover:text-emerald-400 transition">Commercial Solar & Strata Fit-Outs</a></li>
+            <li><a href="verticals.html#vertical-msp" class="hover:text-emerald-400 transition">Managed IT & Cybersecurity (MSPs)</a></li>
+            <li><a href="verticals.html#vertical-recruitment" class="hover:text-emerald-400 transition">Executive Search & Civil Recruitment</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Legal & Sibling Brand -->
+        <div class="space-y-2.5">
+          <div class="font-mono-code text-xs uppercase text-slate-400 font-semibold tracking-wider">Governance & Brand</div>
+          <ul class="space-y-2 text-slate-300 text-xs">
+            <li><a href="privacy.html" class="hover:text-emerald-400 transition">Privacy Policy & Spam Act 2003</a></li>
+            <li><a href="terms.html" class="hover:text-emerald-400 transition">Commercial Terms of Engagement</a></li>
+            <li class="pt-2">
+              <a href="https://bizestudios.com.au" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-white/5 border border-white/10 text-cyan-300 hover:border-cyan-400/40 font-mono-code text-[11px]">
+                <span>Bize Studios (Media Production) ↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-mono-code">
+        <div>© 2026 Bize Studios (ABN 51 767 627 987) trading as Bize Growth. All rights reserved.</div>
+        <div>Shield Domains: <span class="text-slate-400">bizegrowth.com</span> • <span class="text-slate-400">getbizestudios.com</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

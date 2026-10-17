@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en-AU" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pipeline ROI & SDR Replacement Calculator ($ AUD) | Bize Growth</title>
+  <meta name="description" content="Interactive Australian B2B financial modelling tool. Compare the annual pipeline ROI of Bize Growth ($2,500–$4,000/mo) against hiring an in-house Australian SDR ($128,825/yr including Super & software)." />
+  <link rel="canonical" href="https://bizegrowth.com/calculator.html" />
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bizegrowth.com/calculator.html" />
+  <meta property="og:title" content="B2B Pipeline ROI & SDR Replacement Calculator ($ AUD) | Bize Growth" />
+  <meta property="og:description" content="Model your projected monthly appointments, annual pipeline value, and payroll savings in Australian Dollars." />
+  <meta property="og:site_name" content="Bize Growth (Division of Bize Studios)" />
+  <meta property="og:locale" content="en_AU" />
+
+  <!-- Inline SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307090E'/%3E%3Cpath d='M16 44L28 28L36 36L48 20' stroke='%2310B981' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='48' cy='20' r='5' fill='%233B82F6'/%3E%3C/svg%3E" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#07090E',
+            surface: '#0F141F',
+            surfaceElevated: '#151C2C'
+          },
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace']
+          }
+        }
+      }
+    };
+  </script>
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body class="bg-obsidian text-slate-100 antialiased selection:bg-emerald-500/30 selection:text-emerald-200 bg-grid-pattern">
+
+  <!-- Top Telemetry Status Bar -->
+  <div class="bg-[#05070B] border-b border-white/10 py-2 px-4 text-xs font-mono-code">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2.5">
+        <span class="pulse-dot"></span>
+        <span class="text-emerald-400 font-semibold">EXECUTIVE FINANCIAL MODEL:</span>
+        <span class="text-slate-300">All figures denominated in Australian Dollars ($ AUD) incl. 11.5% Superannuation Benchmark</span>
+      </div>
+      <div class="hidden md:flex items-center gap-5 text-slate-400">
+        <span>LLM Engine: <strong class="text-cyan-400">gemini-4-argon</strong></span>
+        <span>•</span>
+        <span>Division of <a href="https://bizestudios.com.au" target="_blank" rel="noopener" class="text-slate-200 underline decoration-slate-600 hover:text-emerald-400">Bize Studios</a> (ABN 51 767 627 987)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Unified Navigation Bar -->
+  <header class="site-header">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group focus:outline-none">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600/20 to-emerald-500/20 border border-emerald-500/40 flex items-center justify-center shadow-lg">
+          <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+          </svg>
+        </div>
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="font-extrabold text-lg tracking-tight text-white">BIZE</span>
+            <span class="font-mono-code text-xs font-semibold px-2 py-0.5 rounded bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">GROWTH</span>
+          </div>
+          <p class="text-[11px] font-mono-code text-slate-400 -mt-0.5">B2B Revenue Engineering • NSW, AU</p>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-1" aria-label="Main Navigation">
+        <a href="index.html" data-page="index.html" class="nav-link">Overview</a>
+        <a href="system.html" data-page="system.html" class="nav-link">The Acquisition Engine</a>
+        <a href="verticals.html" data-page="verticals.html" class="nav-link">Industries We Scale</a>
+        <a href="calculator.html" data-page="calculator.html" class="nav-link active">Pipeline ROI Calculator</a>
+        <a href="audit.html" data-page="audit.html" class="nav-link">Territory Audit</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="audit.html" class="hidden sm:inline-flex btn-primary text-sm py-2.5 px-4">
+          <span>Book 15-Min Pipeline Audit</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </a>
+        <button id="mobile-menu-btn" type="button" aria-expanded="false" aria-label="Toggle Menu" class="lg:hidden p-2.5 rounded-lg bg-white/5 border border-white/10 text-slate-200 hover:bg-white/10">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu-drawer" class="mobile-drawer lg:hidden">
+      <div class="flex flex-col gap-2">
+        <a href="index.html" data-page="index.html" class="nav-link">Overview</a>
+        <a href="system.html" data-page="system.html" class="nav-link">The Acquisition Engine (How It Works)</a>
+        <a href="verticals.html" data-page="verticals.html" class="nav-link">Industries We Scale + Live Simulator</a>
+        <a href="calculator.html" data-page="calculator.html" class="nav-link active">Pipeline ROI & SDR Calculator</a>
+        <a href="audit.html" data-page="audit.html" class="nav-link">Book 15-Min Territory Audit</a>
+        <div class="pt-3 mt-2 border-t border-white/10 flex flex-col gap-2">
+          <a href="audit.html" class="btn-primary w-full justify-center">Book 15-Min Pipeline Audit</a>
+          <a href="https://bizestudios.com.au" target="_blank" rel="noopener" class="btn-secondary w-full justify-center text-xs font-mono-code">Visit Bize Studios Media Division ↗</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative overflow-hidden">
+    <div class="ambient-glow-emerald -top-24 right-0"></div>
+    <div class="ambient-glow-indigo top-80 -left-24"></div>
+
+    <!-- HERO & 1-CLICK PRESETS -->
+    <section class="pt-14 pb-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl space-y-4">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-xs font-mono-code text-emerald-300">
+          <span>// FINANCIAL MODELLING & SDR HEADCOUNT COMPARISON ($ AUD)</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-white tracking-tight leading-tight">
+          Pipeline ROI & <span class="text-gradient-emerald">In-House SDR Replacement</span> Calculator
+        </h1>
+        <p class="text-slate-300 text-base leading-relaxed">
+          Hiring a single full-time Sales Development Representative (SDR) in Sydney or Melbourne costs <strong class="text-white">$128,825+/yr AUD</strong> once you factor in a $95k base salary, 11.5% Superannuation, Apollo/ZoomInfo data licences, and 3 months of unproductive ramp time. Model your exact numbers below.
+        </p>
+      </div>
+
+      <!-- 1-Click Industry Presets -->
+      <div class="mt-8">
+        <div class="text-xs font-mono-code uppercase text-slate-400 mb-2.5">
+          Load 1-Click Australian Industry Benchmark Preset:
+        </div>
+        <div class="flex flex-wrap gap-2.5">
+          <button type="button" data-calc-preset="subcontractors" class="tab-pill active text-xs">
+            01. Commercial Subcontractors ($38k ACV)
+          </button>
+          <button type="button" data-calc-preset="msp" class="tab-pill text-xs">
+            02. Managed IT & Cyber MSP ($48k ACV)
+          </button>
+          <button type="button" data-calc-preset="recruitment" class="tab-pill text-xs">
+            03. Executive Search & Recruitment ($18k Fee)
+          </button>
+          <button type="button" data-calc-preset="enterprise" class="tab-pill text-xs">
+            04. High-Ticket Industrial ($75k ACV)
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN CALCULATOR WORKBENCH -->
+    <section class="pb-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left Input Controls (5 Columns) -->
+        <div class="lg:col-span-5 surface-card p-6 sm:p-8 space-y-6">
+          <div class="border-b border-white/10 pb-3 flex items-center justify-between">
+            <h2 class="text-lg font-bold text-white">1. Commercial Input Parameters</h2>
+            <span class="font-mono-code text-xs text-emerald-400">$ AUD</span>
+          </div>
+
+          <!-- Slider 1: Average Deal Value -->
+          <div>
+            <div class="flex justify-between text-sm mb-2">
+              <label for="calc-deal-value" class="text-slate-300 font-medium">Average Contract / Deal Value</label>
+              <span id="calc-deal-display" class="font-mono-code font-bold text-emerald-400">$38,000 AUD</span>
+            </div>
+            <input id="calc-deal-value" type="range" min="8000" max="120000" step="2000" value="38000" class="exec-slider" />
+            <div class="flex justify-between text-[11px] font-mono-code text-slate-500 mt-1">
+              <span>$8,000 AUD</span>
+              <span>$60,000 AUD</span>
+              <span>$120,000 AUD</span>
+            </div>
+          </div>
+
+          <!-- Slider 2: Sales Close Rate -->
+          <div>
+            <div class="flex justify-between text-sm mb-2">
+              <label for="calc-close-rate" class="text-slate-300 font-medium">Close Rate on Qualified Meetings</label>
+              <span id="calc-close-display" class="font-mono-code font-bold text-blue-400">25%</span>
+            </div>
+            <input id="calc-close-rate" type="range" min="10" max="45" step="1" value="25" class="exec-slider" />
+            <div class="flex justify-between text-[11px] font-mono-code text-slate-500 mt-1">
+              <span>10% Conservative</span>
+              <span>25% B2B Avg</span>
+              <span>45% High-Trust</span>
+            </div>
+          </div>
+
+          <!-- Slider 3: Monthly Outbound Volume -->
+          <div>
+            <div class="flex justify-between text-sm mb-2">
+              <label for="calc-monthly-volume" class="text-slate-300 font-medium">Verified Decision-Makers Reached / Mo</label>
+              <span id="calc-volume-display" class="font-mono-code font-bold text-cyan-400">1,500 / mo</span>
+            </div>
+            <input id="calc-monthly-volume" type="range" min="600" max="3000" step="100" value="1500" class="exec-slider" />
+            <div class="flex justify-between text-[11px] font-mono-code text-slate-500 mt-1">
+              <span>600 / mo (Niche)</span>
+              <span>1,500 / mo (4 Senders)</span>
+              <span>3,000 / mo (Scale)</span>
+            </div>
+          </div>
+
+          <!-- Slider 4: Positive Meeting Conversion Rate -->
+          <div>
+            <div class="flex justify-between text-sm mb-2">
+              <label for="calc-meeting-rate" class="text-slate-300 font-medium">Prospect-to-Meeting Conversion Rate</label>
+              <span id="calc-meeting-rate-display" class="font-mono-code font-bold text-emerald-400">1.8%</span>
+            </div>
+            <input id="calc-meeting-rate" type="range" min="0.8" max="3.5" step="0.1" value="1.8" class="exec-slider" />
+            <div class="flex justify-between text-[11px] font-mono-code text-slate-500 mt-1">
+              <span>0.8% Baseline</span>
+              <span>1.8% Trigger-Led</span>
+              <span>3.5% Hyper-Niche</span>
+            </div>
+          </div>
+
+          <!-- Retainer Tier Select -->
+          <div class="pt-2 border-t border-white/10">
+            <label for="calc-retainer-tier" class="block text-xs font-mono-code uppercase text-slate-400 mb-2">
+              Select Bize Growth Retainer Tier ($ AUD/mo)
+            </label>
+            <select id="calc-retainer-tier" class="exec-select font-mono-code text-xs">
+              <option value="2500">$2,500 AUD/mo — Single Territory / Core Engine (4 Shield Senders)</option>
+              <option value="3000" selected>$3,000 AUD/mo — Dual Trigger Growth Engine (Recommended)</option>
+              <option value="3250">$3,250 AUD/mo — Multi-State MSP / Subcontractor Scale</option>
+              <option value="4000">$4,000 AUD/mo — National Enterprise + Bize Studios VSL Asset</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Right Output & Financial Comparison (7 Columns) -->
+        <div class="lg:col-span-7 space-y-6">
+          
+          <!-- Primary Revenue & ROI Card -->
+          <div class="surface-card-emerald p-7 sm:p-8 space-y-6">
+            <div class="flex flex-wrap items-start justify-between gap-4 border-b border-white/10 pb-5">
+              <div>
+                <div class="text-xs font-mono-code text-emerald-400 uppercase tracking-wider">PROJECTED NEW CLOSED REVENUE (ANNUAL)</div>
+                <div id="res-annual-revenue" class="font-mono-code text-4xl sm:text-5xl font-extrabold text-white mt-1">$3,078,000</div>
+                <div id="res-net-profit" class="text-xs font-mono-code text-slate-300 mt-1">$3,042,000 Net Gain after retainer</div>
+              </div>
+              <div class="text-right">
+                <div class="text-xs font-mono-code text-slate-400 uppercase">RETURN ON RETAINER</div>
+                <div id="res-roi-multiple" class="font-mono-code text-3xl sm:text-4xl font-extrabold text-emerald-400 mt-1">85.5x</div>
+              </div>
+            </div>
+
+            <!-- 4 Metric Boxes -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3.5">
+              <div class="bg-[#070B12] border border-white/10 rounded-lg p-3.5">
+                <div class="text-[11px] font-mono-code text-slate-400">Monthly Meetings</div>
+                <div id="res-monthly-meetings" class="font-mono-code text-lg font-bold text-white mt-1">27 / mo</div>
+                <div id="res-annual-meetings" class="text-[11px] text-emerald-400 font-mono-code mt-0.5">324 qualified meetings / yr</div>
+              </div>
+              <div class="bg-[#070B12] border border-white/10 rounded-lg p-3.5">
+                <div class="text-[11px] font-mono-code text-slate-400">Closed Contracts</div>
+                <div id="res-closed-deals" class="font-mono-code text-lg font-bold text-white mt-1">81 new contracts / yr</div>
+                <div class="text-[11px] text-slate-400 font-mono-code mt-0.5">At selected close rate</div>
+              </div>
+              <div class="bg-[#070B12] border border-white/10 rounded-lg p-3.5">
+                <div class="text-[11px] font-mono-code text-slate-400">Monthly Pipeline</div>
+                <div id="res-monthly-pipeline" class="font-mono-code text-lg font-bold text-cyan-400 mt-1">$1,026,000</div>
+                <div class="text-[11px] text-slate-400 font-mono-code mt-0.5">Active quote velocity</div>
+              </div>
+              <div class="bg-[#070B12] border border-white/10 rounded-lg p-3.5">
+                <div class="text-[11px] font-mono-code text-slate-400">Annual Pipeline</div>
+                <div id="res-annual-pipeline" class="font-mono-code text-lg font-bold text-emerald-400 mt-1">$12,312,000 AUD</div>
+                <div class="text-[11px] text-slate-400 font-mono-code mt-0.5">Total opportunity value</div>
+              </div>
+            </div>
+
+            <!-- Action Bar -->
+            <div class="flex flex-col sm:flex-row gap-3 pt-2">
+              <button id="calc-lock-audit-btn" type="button" class="btn-emerald flex-1 justify-center py-3.5 text-base">
+                <span>Lock In This Pipeline — Book Audit</span>
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+              </button>
+              <button id="calc-download-brief-btn" type="button" class="btn-secondary justify-center py-3.5 px-5 text-xs font-mono-code">
+                <span>⬇ Download / Copy Executive ROI Brief (.txt)</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Side-by-Side Cost Comparison: Bize Growth vs In-House SDR -->
+          <div class="surface-card p-6 sm:p-8 space-y-5">
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-white/10 pb-3">
+              <h3 class="text-base font-bold text-white">Annual Cost Breakdown: Bize Growth vs. Hiring an In-House Australian SDR</h3>
+              <span class="font-mono-code text-xs px-2.5 py-0.5 rounded bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
+                Direct Savings: <strong id="res-payroll-savings">$92,825 AUD</strong>/yr
+              </span>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5 font-mono-code text-xs">
+              <!-- In-House SDR Column -->
+              <div class="bg-[#080B12] border border-rose-500/30 rounded-lg p-5 space-y-2.5">
+                <div class="text-rose-400 font-bold uppercase">❌ In-House SDR (Sydney / Melbourne)</div>
+                <div class="flex justify-between text-slate-300">
+                  <span>Base Salary (Mid-Level SDR):</span>
+                  <span>$95,000 / yr</span>
+                </div>
+                <div class="flex justify-between text-slate-300">
+                  <span>Statutory Superannuation (11.5%):</span>
+                  <span>$10,925 / yr</span>
+                </div>
+                <div class="flex justify-between text-slate-300">
+                  <span>Data & Enrichment Licences:</span>
+                  <span>$14,400 / yr</span>
+                </div>
+                <div class="flex justify-between text-slate-300">
+                  <span>Recruitment & 90-Day Ramp Drag:</span>
+                  <span>$8,500 / yr</span>
+                </div>
+                <div class="flex justify-between text-slate-400 pt-2 border-t border-white/10">
+                  <span>Est. Cost Per Booked Meeting:</span>
+                  <span id="res-cpm-sdr" class="text-rose-400 font-bold">$613</span>
+                </div>
+                <div class="flex justify-between text-sm font-bold text-white pt-2 border-t border-white/10">
+                  <span>Total Annual Liability:</span>
+                  <span id="res-sdr-annual-cost" class="text-rose-400">$128,825/yr</span>
+                </div>
+              </div>
+
+              <!-- Bize Growth Column -->
+              <div class="bg-[#080B12] border border-emerald-500/40 rounded-lg p-5 space-y-2.5">
+                <div class="text-emerald-400 font-bold uppercase">✓ Bize Growth Autonomous System</div>
+                <div class="flex justify-between text-slate-300">
+                  <span>Multi-Domain Shield + 4 Senders:</span>
+                  <span class="text-emerald-400">INCLUDED</span>
+                </div>
+                <div class="flex justify-between text-slate-300">
+                  <span>2,000+ Verified Lead Credits/Mo:</span>
+                  <span class="text-emerald-400">INCLUDED</span>
+                </div>
+                <div class="flex justify-between text-slate-300">
+                  <span>gemini-4-argon Copy & Triggers:</span>
+                  <span class="text-emerald-400">INCLUDED</span>
+                </div>
+                <div class="flex justify-between text-slate-300">
+                  <span>Superannuation / Payroll Tax / Leave:</span>
+                  <span class="text-emerald-400">$0 AUD</span>
+                </div>
+                <div class="flex justify-between text-slate-400 pt-2 border-t border-white/10">
+                  <span>Est. Cost Per Booked Meeting:</span>
+                  <span id="res-cpm-bize" class="text-emerald-400 font-bold">$111</span>
+                </div>
+                <div class="flex justify-between text-sm font-bold text-white pt-2 border-t border-white/10">
+                  <span>Total Annual Investment:</span>
+                  <span>
+                    <strong id="res-bize-annual-cost" class="text-emerald-400">$36,000/yr</strong>
+                    <span id="res-bize-monthly-cost" class="text-[11px] text-slate-400 block text-right">($3,000/mo retainer)</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Unified Executive Footer -->
+  <footer class="bg-[#05070B] border-t border-white/10 pt-16 pb-12 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-white/10">
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-lg bg-emerald-500/15 border border-emerald-500/40 flex items-center justify-center">
+              <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+              </svg>
+            </div>
+            <span class="font-extrabold text-lg text-white tracking-tight">BIZE GROWTH</span>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed max-w-sm">
+            The B2B Revenue Engineering & Autonomous Client Acquisition division of <strong class="text-slate-200">Bize Studios</strong> (ABN 51 767 627 987). Operating across the Central Coast, Parramatta, Greater Sydney, and National Australian B2B corridors.
+          </p>
+          <div class="font-mono-code text-xs text-slate-400 space-y-1">
+            <div>Direct Executive Desk: <a href="mailto:brandon@bizestudios.com.au" class="text-emerald-400 hover:underline">brandon@bizestudios.com.au</a></div>
+            <div>General Enquiries: <a href="mailto:enquiries@bizestudios.com.au" class="text-slate-300 hover:underline">enquiries@bizestudios.com.au</a></div>
+          </div>
+        </div>
+
+        <div class="space-y-2.5">
+          <div class="font-mono-code text-xs uppercase text-slate-400 font-semibold tracking-wider">Acquisition System</div>
+          <ul class="space-y-2 text-slate-300 text-xs">
+            <li><a href="index.html" class="hover:text-emerald-400 transition">Executive Overview</a></li>
+            <li><a href="system.html" class="hover:text-emerald-400 transition">4-Stage Acquisition Engine</a></li>
+            <li><a href="verticals.html" class="hover:text-emerald-400 transition">Target High-Ticket Verticals</a></li>
+            <li><a href="verticals.html#live-simulator" class="hover:text-emerald-400 transition">Live Outreach Simulator</a></li>
+            <li><a href="calculator.html" class="hover:text-emerald-400 transition">Pipeline ROI & SDR Calculator</a></li>
+            <li><a href="audit.html" class="hover:text-emerald-400 transition">15-Min Pipeline Architecture Audit</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2.5">
+          <div class="font-mono-code text-xs uppercase text-slate-400 font-semibold tracking-wider">Industries We Scale</div>
+          <ul class="space-y-2 text-slate-300 text-xs">
+            <li><a href="verticals.html#vertical-subcontractors" class="hover:text-emerald-400 transition">Commercial HVAC & Fire Compliance</a></li>
+            <li><a href="verticals.html#vertical-subcontractors" class="hover:text-emerald-400 transition">Commercial Solar & Strata Fit-Outs</a></li>
+            <li><a href="verticals.html#vertical-msp" class="hover:text-emerald-400 transition">Managed IT & Cybersecurity (MSPs)</a></li>
+            <li><a href="verticals.html#vertical-recruitment" class="hover:text-emerald-400 transition">Executive Search & Civil Recruitment</a></li>
+          </ul>
+        </div>
+
+        <div class="space-y-2.5">
+          <div class="font-mono-code text-xs uppercase text-slate-400 font-semibold tracking-wider">Governance & Brand</div>
+          <ul class="space-y-2 text-slate-300 text-xs">
+            <li><a href="privacy.html" class="hover:text-emerald-400 transition">Privacy Policy & Spam Act 2003</a></li>
+            <li><a href="terms.html" class="hover:text-emerald-400 transition">Commercial Terms of Engagement</a></li>
+            <li class="pt-2">
+              <a href="https://bizestudios.com.au" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-white/5 border border-white/10 text-cyan-300 hover:border-cyan-400/40 font-mono-code text-[11px]">
+                <span>Bize Studios (Media Production) ↗</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 font-mono-code">
+        <div>© 2026 Bize Studios (ABN 51 767 627 987) trading as Bize Growth. All rights reserved.</div>
+        <div>Shield Domains: <span class="text-slate-400">bizegrowth.com</span> • <span class="text-slate-400">getbizestudios.com</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
