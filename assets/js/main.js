@@ -75,11 +75,12 @@
       });
     }
 
-    // Highlight current page in navbar
-    const path = window.location.pathname.split('/').pop() || 'index.html';
+    // Highlight current page in navbar (supports both /system and /system.html)
+    const rawSeg = window.location.pathname.replace(/\/+$/, '').split('/').pop() || 'index.html';
+    const normalizedPage = rawSeg.endsWith('.html') ? rawSeg : `${rawSeg}.html`;
     document.querySelectorAll('.nav-link[data-page]').forEach((link) => {
       const target = link.getAttribute('data-page');
-      if (target === path || (path === '' && target === 'index.html')) {
+      if (target === normalizedPage || (rawSeg === '' && target === 'index.html')) {
         link.classList.add('active');
       } else {
         link.classList.remove('active');
